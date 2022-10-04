@@ -34,7 +34,7 @@
     letter-spacing: 0.03em;
 }
 
-.logo-link {
+.logo-black {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -164,7 +164,7 @@
   background-color: var(--boder-bg-color);
 }
 
-.logo-link {
+.logo-light {
   color: var(--main-light-color);
 }
 

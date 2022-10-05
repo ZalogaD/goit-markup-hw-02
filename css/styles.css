@@ -13,8 +13,8 @@
 .body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  background-color: var(--main-font-color);
-  color: var(--main-light-color);
+  background-color: var(--main-light-color);
+  color: var(--main-font-color);
 }
 
 .list {
@@ -26,41 +26,46 @@
 }
 
 /* Шапка */
-.logo-header {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: --accent-color: #2196f3;
+.logo,
+.logo-dark {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
 }
 
-.logo-black {
-    color: --logo-color: #000000;
-}
-
-.logo-link {
+.logo-dark {
   color: var(--logo-color);
 }
 
-.link.current {
+.nav-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondory-font-color);
+}
+
+.nav-link.current {
   color: var(--accent-color);
 }
 
-.link:hover,
-.link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-color);
 }
 
-.address-link {
+.contact-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-font-color);
 }
 
-.address-link:hover,
-.address-link:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--accent-color);
 }
 
@@ -112,7 +117,7 @@
   margin: -1px;
 }
 
-.title {
+.feature-title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -120,13 +125,13 @@
   color: var(--secondory-font-color);
 }
 
-.text {
+.feature-text {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
 /*Чим ми займаємось */
-.section-title {
+.title {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
@@ -139,11 +144,15 @@
   background-color: var(--section-team-bg-color);
 }
 
-.section-title {
+.team-title {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--secondory-font-color);
+}
+
+.team-box {
+  background-color: var(--main-light-color);
 }
 
 /* Підвал */
@@ -166,12 +175,10 @@
   color: var(--main-light-color);
 }
 
-.address-list {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
+.address-contact {
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+  color: var(--address-text-color);
 }
 
 .address-link:hover,
@@ -181,6 +188,7 @@
 
 /* Портфоліщ *.
 /* Філтри */
+
 .filter-button {
   font-family: inherit;
   font-weight: 500;
@@ -194,6 +202,7 @@
   border: none;
   cursor: pointer;
 }
+
 .filter-button:hover,
 .filter-button:focus {
   color: var(--main-light-color);
@@ -202,6 +211,7 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
+
 .card-title {
   font-weight: 700;
   font-size: 18px;
@@ -209,6 +219,7 @@
   letter-spacing: 0.06em;
   color: var(--secondory-font-color);
 }
+
 .card-text {
   font-size: 16px;
   line-height: 1.87;
